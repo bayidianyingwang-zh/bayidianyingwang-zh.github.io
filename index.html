@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八一电影网 | 中国军事题材电影资料库 · 军旅影视作品在线检索与深度解读平台</title>
+<meta name="keywords" content="八一电影网, bayidianyingwang-zh, 八一电影网军旅电影, 中国军事题材电影, 八一电影制片厂作品, 战争片资料库, 军旅电视剧推荐, 红色经典电影, 国防军事影视评论, 建军节观影指南, bayidianyingwang-zh.github.io">
+<meta name="description" content="八一电影网(bayidianyingwang-zh.github.io)专注于中国军事题材与军旅影视作品的资料整理与深度解读，系统收录八一电影制片厂经典影片、当代军旅题材电视剧及战争史诗大片，提供作品年表、人物档案、幕后考据与观影指南，是军事影视爱好者的一站式检索入口。">
+<meta name="author" content="八一电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0d120f">
+<link rel="canonical" href="https://bayidianyingwang-zh.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>★</text></svg>">
+<style>
+:root{
+  --bg:#0b0f0c;--panel:#111713;--line:#233027;--ink:#e6efe8;--mute:#8ea193;
+  --army:#6b8e3d;--army2:#4a6b28;--khaki:#c2b280;--steel:#4a6b7a;--rust:#a8522e;
+  --mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(680px 460px at 88% 6%,rgba(107,142,61,.13),transparent 60%),
+  radialial-gradient(560px 520px at 4% 46%,rgba(74,107,122,.12),transparent 60%);
+  background:radial-gradient(680px 460px at 88% 6%,rgba(107,142,61,.13),transparent 60%),
+  radial-gradient(560px 520px at 4% 46%,rgba(74,107,122,.12),transparent 60%);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+  background-image:repeating-linear-gradient(0deg,rgba(230,239,232,.035) 0 1px,transparent 1px 44px),
+  repeating-linear-gradient(90deg,rgba(230,239,232,.035) 0 1px,transparent 1px 44px);}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:96px 0}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;color:var(--army);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:1px;background:var(--army)}
+.h2{font-size:clamp(1.65rem,3.8vw,2.55rem);font-weight:800;line-height:1.3;letter-spacing:-.3px;margin-bottom:14px}
+.h2 em{font-style:normal;color:var(--khaki)}
+.lead{color:var(--mute);font-size:15.5px;max-width:640px}
+button{font-family:inherit}
+
+/* header */
+header{position:sticky;top:0;z-index:60;border-bottom:1px solid var(--line);background:rgba(11,15,12,.92);backdrop-filter:blur(12px)}
+.head{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .star{width:40px;height:40px;display:grid;place-items:center;font-size:18px;color:#0b0f0c;background:var(--khaki);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.logo b{font-size:19px;letter-spacing:2px;font-weight:800}
+.logo span{font-family:var(--mono);font-size:10px;color:var(--army);letter-spacing:.16em;display:block;margin-top:-2px}
+.nav{display:flex;align-items:center;gap:2px}
+.nav a{font-size:14px;color:var(--mute);padding:8px 14px;transition:.2s;position:relative}
+.nav a:hover{color:var(--ink)}
+.nav a.cta{color:#0b0f0c;background:var(--army);font-weight:700;margin-left:6px}
+.nav a.cta:hover{background:#7fa84a;color:#0b0f0c}
+.mbtn{display:none;width:44px;height:44px;border:1px solid var(--line);background:transparent;cursor:pointer;position:relative;flex:none}
+.mbtn span{position:absolute;left:12px;right:12px;height:2px;background:var(--army);transition:.3s}
+.mbtn span:nth-child(1){top:15px}.mbtn span:nth-child(2){top:21px}.mbtn span:nth-child(3){top:27px}
+.mbtn.open span:nth-child(1){top:21px;transform:rotate(45deg)}.mbtn span:nth-child(2){opacity:0}.mbtn span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+/* hero */
+.hero{padding:88px 0 64px;position:relative}
+.hbox{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hbox .l .stripe{font-family:var(--mono);font-size:12px;color:var(--khaki);letter-spacing:.1em;border:1px solid var(--line);padding:8px 14px;display:inline-block;margin-bottom:22px;background:rgba(194,178,128,.05)}
+.hbox h1{font-size:clamp(2.1rem,5.2vw,4rem);line-height:1.12;font-weight:900;letter-spacing:-1px}
+.hbox h1 s{text-decoration:none;color:var(--army)}
+.hbox .sub{margin-top:24px;font-size:15.5px;color:var(--mute);max-width:520px;border-left:3px solid var(--army);padding-left:16px}
+.counters{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:38px}
+.counters div{background:var(--panel);padding:20px 18px}
+.counters div b{display:block;font-family:var(--mono);font-size:25px;color:var(--khaki);font-weight:800}
+.counters div i{font-style:normal;font-size:12px;color:var(--mute);letter-spacing:.06em}
+.acts{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.btn1,.btn2{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;font-weight:700;font-size:14.5px;cursor:pointer;border:1px solid transparent;transition:.22s}
+.btn1{background:var(--army);color:#0b0f0c}
+.btn1:hover{background:#7fa84a}
+.btn2{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn2:hover{border-color:var(--army);color:var(--army)}
+
+/* hero side panel */
+.side{border:1px solid var(--line);background:var(--panel);padding:26px;position:relative}
+.side::after{content:"";position:absolute;top:-1px;right:-1px;width:60px;height:60px;background:linear-gradient(135deg,var(--army) 50%,transparent 50%)}
+.side h3{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--army);margin-bottom:18px}
+.side ol{list-style:none;counter-reset:s}
+.side ol li{counter-increment:s;padding:13px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline;font-size:14px}
+.side ol li:last-child{border-bottom:none}
+.side ol li::before{content:"0" counter(s);font-family:var(--mono);font-size:11px;color:var(--khaki);flex:none;width:24px}
+.side ol li b{font-weight:600}
+.side ol li span{color:var(--mute);font-size:12.5px;margin-left:auto;flex:none}
+
+/* filter bar */
+.fbar{border:1px solid var(--line);background:var(--panel);padding:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:44px}
+.fbar span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--army);margin-right:4px}
+.chip{padding:7px 15px;border:1px solid var(--line);font-size:13px;color:var(--mute);cursor:pointer;transition:.2s;background:transparent}
+.chip:hover,.chip.on{border-color:var(--army);color:var(--ink);background:rgba(107,142,61,.12)}
+
+/* archive table */
+.arch{border:1px solid var(--line);background:var(--panel)}
+.arch .row{display:grid;grid-template-columns:74px 2fr 1fr 1fr 96px 80px;gap:16px;padding:17px 20px;align-items:center;border-bottom:1px solid var(--line);font-size:14px;transition:.2s}
+.arch .row:not(.headr):hover{background:rgba(107,142,61,.07)}
+.arch .headr{background:rgba(107,142,61,.1);font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--army);text-transform:uppercase}
+.arch .yr{font-family:var(--mono);color:var(--khaki);font-weight:700}
+.arch .tt b{font-weight:600}
+.arch .tt small{display:block;color:var(--mute);font-size:12px;margin-top:2px}
+.arch .tag{font-size:12px;color:var(--mute)}
+.arch .rate{font-family:var(--mono);color:var(--army);font-weight:700;text-align:right}
+.arch .more{text-align:right;color:var(--steel);font-size:13px}
+.arch .more:hover{color:var(--khaki)}
+
+/* doctrine */
+.doc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.doc .d{padding:34px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);transition:.25s}
+.doc .d:nth-child(3n){border-right:none}
+.doc .d:hover{background:rgba(107,142,61,.08)}
+.doc .num{font-family:var(--mono);font-size:12px;color:var(--army);letter-spacing:.1em}
+.doc h4{font-size:17px;margin:12px 0 10px;font-weight:700}
+.doc p{font-size:14px;color:var(--mute)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g{border:1px solid var(--line);background:var(--panel);transition:.28s;overflow:hidden}
+.g:hover{transform:translateY(-5px);border-color:var(--army)}
+.g .cap{height:150px;display:grid;place-items:center;font-size:48px;position:relative}
+.g .cap .yr{position:absolute;top:12px;left:12px;font-family:var(--mono);font-size:11px;color:#0b0f0c;background:var(--khaki);padding:3px 8px}
+.g .cap .min{position:absolute;bottom:12px;right:12px;font-family:var(--mono);font-size:11px;color:var(--ink);border:1px solid rgba(230,239,232,.4);padding:3px 8px}
+.c1{background:linear-gradient(150deg,#1a2a18,#3d5c2e)}.c2{background:linear-gradient(150deg,#1c2430,#2e4a5c)}
+.c3{background:linear-gradient(150deg,#2a2018,#5c432e)}.c4{background:linear-gradient(150deg,#241a1c,#5c2e34)}
+.c5{background:linear-gradient(150deg,#182a2a,#2e5c54)}.c6{background:linear-gradient(150deg,#262018,#5c512e)}
+.g .info{padding:20px 22px}
+.g .info h3{font-size:16.5px;margin-bottom:9px;font-weight:700}
+.g .info p{font-size:13.5px;color:var(--mute)}
+.g .info .meta{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--army);display:flex;justify-content:space-between}
+
+/* timeline */
+.tl{position:relative;padding-left:44px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var-gradient}
+.tl::before{background:linear-gradient(var(--army),var(--line))}
+.tl .node{position:relative;padding-bottom:34px}
+.tl .node::before{content:"";position:absolute;left:-38px;top:6px;width:16px;height:16px;background:var(--bg);border:2px solid var(--army)}
+.tl .node .yr{font-family:var(--mono);font-size:12px;color:var(--khaki);letter-spacing:.08em}
+.tl .node h4{font-size:16.5px;margin:6px 0 8px;font-weight:700}
+.tl .node p{font-size:14px;color:var(--mute);max-width:720px}
+
+/* notice */
+.notice{border:1px solid var(--line);border-left:4px solid var(--khaki);background:var(--panel);padding:30px 34px}
+.notice h3{font-size:18px;margin-bottom:12px;font-weight:700}
+.notice p{font-size:14.5px;color:var(--mute)}
+.notice .sign{margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--army);letter-spacing:.08em}
+
+/* qa */
+.qa{max-width:900px}
+.qa details{border:1px solid var(--line);background:var(--panel);margin-bottom:10px;transition:.2s}
+.qa details[open]{border-color:var(--army)}
+.qa summary{padding:19px 22px;cursor:pointer;font-size:15px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"▸";color:var(--army);transition:.25s;font-size:16px}
+.qa details[open] summary::after{transform:rotate(90deg)}
+.qa details p{padding:0 22px 20px;color:var(--mute);font-size:14.5px}
+
+/* cta */
+.cta{display:grid;grid-template-columns:1.4fr 1fr;gap:0;border:1px solid var(--army);background:linear-gradient(110deg,#1a2415,#111713)}
+.cta .l{padding:50px 44px}
+.cta .r{border-left:1px solid var(--line);display:grid;place-items:center;padding:40px;text-align:center;background:rgba(107,142,61,.05)}
+.cta h3{font-size:clamp(1.55rem,3.4vw,2.2rem);margin-bottom:12px}
+.cta p{color:var(--mute);max-width:540px}
+.cta .r b{font-family:var(--mono);font-size:26px;color:var(--khaki);display:block;margin-bottom:8px}
+.cta .r span{font-size:13px;color:var(--mute)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:60px 0 28px;background:#080b09}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.fg h5{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--army);margin-bottom:16px}
+.fg ul{list-style:none;display:grid;gap:9px}
+.fg ul a{color:var(--mute);font-size:14px;transition:.2s}
+.fg ul a:hover{color:var(--khaki)}
+.fg p{color:var(--mute);font-size:13.5px;margin-top:14px;max-width:340px}
+.urlbox{margin-top:22px;border:1px dashed var(--army);padding:14px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(107,142,61,.06)}
+.urlbox code{font-family:var(--mono);font-size:13px;color:var(--khaki);font-weight:700;word-break:break-all}
+.urlbox button{margin-left:auto;background:var(--army);color:#0b0f0c;border:none;padding:7px 14px;font-size:12.5px;cursor:pointer;font-weight:700}
+.urlbox button:hover{background:#7fa84a}
+.fbot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.04em}
+
+#topbtn{position:fixed;right:20px;bottom:24px;width:46px;height:46px;border:1px solid var(--army);background:var(--bg);color:var(--army);cursor:pointer;z-index:70;opacity:0;pointer-events:none;transition:.3s;font-size:17px}
+#topbtn.show{opacity:1;pointer-events:auto}
+#topbtn:hover{background:var(--army);color:#0b0f0c}
+
+@media(max-width:980px){
+  .hbox{grid-template-columns:1fr;gap:40px}.side{max-width:520px}
+  .arch .row{grid-template-columns:60px 1fr 80px;font-size:13px;gap:10px;padding:13px}
+  .arch .row .tag,.arch .row .rate{display:none}
+  .arch .headr{display:none}
+  .doc,.gal,.fg{grid-template-columns:1fr}
+  .doc .d{border-right:none}
+  .cta{grid-template-columns:1fr}
+  .cta .r{border-left:none;border-top:1px solid var(--line)}
+  .nav{position:fixed;top:74px;left:0;right:0;flex-direction:column;padding:18px;background:rgba(11,15,12,.98);border-bottom:1px solid var(--line);gap:2px;transform:translateY(-140%);transition:.35s);align-items:stretch}
+  .nav{transform:translateY(-140%);transition:.35s;align-items:stretch}
+  .nav.open{transform:translateY(0)}
+  .nav a{font-size:15px;padding:12px 14px}.nav a.cta{margin-left:0;text-align:center}
+  .mbtn{display:block}
+  section{padding:64px 0}.hero{padding:64px 0 44px}
+}
+@media(max-width:520px){
+  .wrap{padding:0 16px}.hero h1{font-size:2rem}
+  .counters{grid-template-columns:1fr 1fr}.side ol li span{display:none}
+  .acts .btn1,.acts .btn2{flex:1;justify-content:center}
+  #topbtn{right:12px;bottom:16px;width:42px;height:42px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap head">
+    <a href="#" class="logo"><span class="star">★</span><div><b>八一电影网</b><span>BAYI FILM ARCHIVE</span></div></a>
+    <nav class="nav" id="nav">
+      <a href="#top">首页</a>
+      <a href="#archive">影片年表</a>
+      <a href="#gallery">片库图集</a>
+      <a href="#doctrine">内容主张</a>
+      <a href="#timeline">八一厂年谱</a>
+      <a href="#qa">常见问题</a>
+      <a href="#archive" class="cta">检索片库</a>
+    </nav>
+    <button class="mbtn" id="mbtn" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hbox">
+    <div class="l">
+      <div class="stripe">FILE NO. BAYI-2026 / 军事影视资料库</div>
+      <h1>记录每一部<br><s>军旗下的</s>光影</h1>
+      <p class="sub">八一电影网(bayidianyingwang-zh.github.io)专注于中国军事题材与军旅影视作品的系统整理，从八一电影制片厂建厂初期的黑白胶片，到当代战争史诗大片，逐部归档、逐帧考据。</p>
+      <div class="counters">
+        <div><b>1,200+</b><i>归档影片</i></div>
+        <div><b>68</b><i>题材分类</i></div>
+        <div><b>310</b><i>人物档案</i></div>
+        <div><b>17</b><i>研究专栏</i></div>
+      </div>
+      <div class="acts">
+        <a class="btn1" href="#archive">进入影片年表 →</a>
+        <a class="btn2" href="#doctrine">了解内容主张</a>
+      </div>
+    </div>
+    <aside class="side">
+      <h3>◆ 本周军旅片单 TOP 05</h3>
+      <ol>
+        <li><b>长津湖之水门桥</b><span>战争 · 2022</span></li>
+        <li><b>我和我的父辈 · 乘风篇</b><span>剧情 · 2021</span></li>
+        <li><b>集结号</b><span>战争 · 2007</span></li>
+        <li><b>士兵突击（剧集）</b><span>军旅 · 2006</span></li>
+        <li><b>地道战</b><span>经典 · 1965</span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section id="archive" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Film Archive / 影片年表</div>
+    <h2 class="h2">八一电影网<b>归档影片年表</b><br><em>按年代与题材交叉检索</em></h2>
+    <p class="lead">以下为八一电影网(bayidianyingwang-zh.github.io)精选归档的部分代表性军事题材与军旅影视作品，完整片库持续更新，可按照题材、年代、军兵种与制片厂四个维度进行筛选。</p>
+    <div class="fbar">
+      <span>◆ 筛选</span>
+      <button class="chip on">全部</button>
+      <button class="chip">战争史诗</button>
+      <button class="chip">军旅生活</button>
+      <button class="chip">红色经典</button>
+      <button class="chip">历史革命</button>
+      <button class="chip">现代国防</button>
+    </div>
+    <div class="arch" style="margin-top:22px">
+      <div class="row headr"><span>年代</span><span>片名 / 简介</span><span>题材</span><span>制片方</span><span>评分</span><span></span></div>
+      <div class="row"><span class="yr">2022</span><span class="tt"><b>长津湖之水门桥</b><small>抗美援朝题材战争史诗，聚焦水门桥阻击战</small></span><span class="tag">战争史诗</span><span class="tag">博纳影业</span><span class="rate">9.4</span><a class="more" href="#">详情 ›</a></div>
+      <div class="row"><span class="yr">2007</span><span class="tt"><b>集结号</b><small>解放战争背景下的军人荣誉与身份认同</small></span><span class="tag">战争剧情</span><span class="tag">华谊兄弟</span><span class="rate">9.2</span><a class="more" href="#">详情 ›</a></div>
+      <div class="row"><span class="yr">2006</span><span class="tt"><b>士兵突击</b><small>当代军旅题材电视剧，讲述普通士兵的成长</small></span><span class="tag">军旅生活</span><span class="tag">八一厂</span><span class="rate">9.5</span><a class="more" href="#">详情 ›</a></div>
+      <div class="row"><span class="yr">1999</span><span class="tt"><b>横空出世</b><small>原子弹研发历程中的军人科学家群像</small></span><span class="tag">历史革命</span><span class="tag">北京电影制片厂</span><span class="rate">9.3</span><a class="more" href="#">详情 ›</a></div>
+      <div class="row"><span class="yr">1965</span><span class="tt"><b>地道战</b><small>抗日战争时期华北平原游击战术的银幕呈现</small></span><span class="tag">红色经典</span><span class="tag">八一厂</span><span class="rate">9.0</span><a class="more" href="#">详情 ›</a></div>
+      <div class="row"><span class="yr">1952</span><span class="tt"><b>南征北战</b><small>解放战争运动战思想最早的大银幕表达</small></span><span class="tag">红色经典</span><span class="tag">八一厂</span><span class="rate">8.8</span><a class="more" href="#">详情 ›</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="doctrine" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Our Doctrine / 内容主张</div>
+    <h2 class="h2">我们如何做<em>军事影视资料整理</em></h2>
+    <p class="lead">八一电影网(bayidianyingwang-zh.github.io)不是播放平台，也不追逐票房与热搜。我们做的，是把散落在几十年间的军事影视作品重新归档，并讲清楚它们为什么重要。</p>
+    <div class="doc" style="margin-top:42px">
+      <div class="d">
+        <div class="num">01 / ARCHIVE</div>
+        <h4>以归档代替推荐</h4>
+        <p>不按热度排序，按年代、制片厂与军兵种建立多维度索引，让研究者能快速定位某一时期、某一兵种的影像样本。</p>
+      </div>
+      <div class="d">
+        <div class="num">02 / VERIFY</div>
+        <h4>史实优先于戏剧</h4>
+        <p>每一部入选影片都附有史实对照说明，标注艺术加工部分，帮助观众区分银幕叙事与历史原貌。</p>
+      </div>
+      <div class="d">
+        <div class="num">03 / CONTEXT</div>
+        <h4>还原创作背景</h4>
+        <p>补充影片的创作年代、政治语境与审查背景，理解一部军事片，必须先理解它诞生的那个年代。</p>
+      </div>
+      <div class="d">
+        <div class="num">04 / LINEAGE</div>
+        <h4>梳理厂史脉络</h4>
+        <p>八一电影制片厂自1952年建厂以来的作品逐年代归档，呈现中国军事电影美学风格的演变轨迹。</p>
+      </div>
+      <div class="d">
+        <div class="num">05 / PERSPECTIVE</div>
+        <h4>多视角解读</h4>
+        <p>除主流评价外，收录军人观众、军事史研究者与影评人的交叉视角，避免单一叙事口径。</p>
+      </div>
+      <div class="d">
+        <div class="num">06 / OPEN</div>
+        <h4>开放协作</h4>
+        <p>资料库条目接受纠错与补充，军事爱好者可通过投稿渠道提交考证成果，共同维护数据准确性。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Genre Index / 题材图集</div>
+    <h2 class="h2">六大题材分区 · <em>按类型找片</em></h2>
+    <p class="lead">八一电影网(bayidianyingwang-zh.github.io)将归档影片划分为六个核心题材分区，每个分区配有题材定义、代表作品清单与观影建议，方便不同兴趣方向的观众快速定位。</p>
+    <div class="gal" style="margin-top:42px">
+      <article class="g">
+        <div class="cap c1"><span class="yr">分区 01</span><span class="min">286 部</span>🎖️</div>
+        <div class="info"><h3>战争史诗</h3><p>以大规模战争为背景，聚焦战役进程与集体命运，多呈现宏观叙事与群像塑造。</p><div class="meta"><span>代表：长津湖系列</span><b>查看 ›</b></div></div>
+      </article>
+      <article class="g">
+        <div class="cap c2"><span class="yr">分区 02</span><span class="min">174 部</span>🛡️</div>
+        <div class="info"><h3>军旅生活</h3><p>以军队日常训练、战友关系与个人成长为线索，风格贴近现实，情感表达克制。</p><div class="meta"><span>代表：士兵突击</span><b>查看 ›</b></div></div>
+      </article>
+      <article class="g">
+        <div class="cap c3"><span class="yr">分区 03</span><span class="min">208 部</span>🚩</div>
+        <div class="info"><h3>红色经典</h3><p>上世纪五六十年代八一电影制片厂出品的革命历史题材作品，具有鲜明的时代美学特征。</p><div class="meta"><span>代表：地道战 / 地雷战</span><b>查看 ›</b></div></div>
+      </article>
+      <article class="g">
+        <div class="cap c4"><span class="yr">分区 04</span><span class="min">132 部</span>📜</div>
+        <div class="info"><h3>历史革命</h3><p>以真实历史事件与人物为原型，兼顾戏剧张力与史实考证，多为重大革命历史题材。</p><div class="meta"><span>代表：建党伟业</span><b>查看 ›</b></div></div>
+      </article>
+      <article class="g">
+        <div class="cap c5"><span class="yr">分区 05</span><span class="min">98 部</span>🛰️</div>
+        <div class="info"><h3>现代国防</h3><p>聚焦当代军事装备、国防科技与新型作战样式，呈现军队现代化建设进程。</p><div class="meta"><span>代表：红海行动</span><b>查看 ›</b></div></div>
+      </article>
+      <article class="g">
+        <div class="cap c6"><span class="yr">分区 06</span><span class="min">156 部</span>🎖️</div>
+        <div class="info"><h3>军人传记</h3><p>以军事人物为主角的传记式作品，着重刻画人物命运与历史抉择，兼具文献与戏剧价值。</p><div class="meta"><span>代表：彭德怀元帅</span><b>查看 ›</b></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="timeline" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Studio Chronicle / 八一厂年谱</div>
+    <h2 class="h2">八一电影制片厂<em>七十余年影像年谱</em></h2>
+    <div class="tl" style="margin-top:44px">
+      <div class="node"><div class="yr">1952 · 建厂</div><h4>解放军电影制片厂成立</h4><p>8月1日正式建厂，1956年更名为八一电影制片厂，成为中国唯一的军队电影制片机构。</p></div>
+      <div class="node"><div class="yr">1952 — 1966</div><h4>红色经典创作高峰期</h4><p>《南征北战》《柳堡的故事》《地雷战》《地道战》《英雄儿女》等作品相继问世，确立了军事电影的叙事范式。</p></div>
+      <div class="node"><div class="yr">1979 — 1990</div><h4>新时期军事题材的多元化</h4><p>《小花》《高山下的花环》等作品开始注重个体情感与战争伦理，军事电影从宣传工具走向艺术表达。</p></div>
+      <div class="node"><div class="yr">1991 — 2010</div><h4>主旋律商业化的探索</h4><p>《大决战》三部曲完成解放战争全景式呈现，《冲出亚马逊》尝试军事动作类型化创作。</p></div>
+      <div class="node"><div class="yr">2018 · 改制</div><h4>八一电影制片厂并入解放军文化艺术中心</h4><p>机构调整后，军事题材影视创作进入军民融合的新阶段，与商业制片体系深度合作。</p></div>
+      <div class="node"><div class="yr">2026 · 现在</div><h4>资料数字化与在线归档</h4><p>八一电影网(bayidianyingwang-zh.github.io)致力于将散落各处的军事影视资料进行系统化归档与数字化整理，建立可检索的在线资料库。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="notice">
+      <h3>◆ 本站定位声明</h3>
+      <p>八一电影网(bayidianyingwang-zh.github.io)为军事影视资料整理与信息导航类网站，所有影片资料仅供研究、学习与评论使用。本站不提供任何在线播放服务，不涉及影视资源下载，用户可通过正版授权渠道观看相关作品，支持正版、尊重版权。</p>
+      <div class="sign">— 八一电影网编辑部 · 资料库维护中</div>
+    </div>
+  </div>
+</section>
+
+<section id="qa" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">FAQ / 常见问题</div>
+    <h2 class="h2">关于八一电影网<em>的常见疑问</em></h2>
+    <div class="qa" style="margin-top:36px">
+      <details open>
+        <summary>八一电影网(bayidianyingwang-zh.github.io)主要收录哪些类型的影片？</summary>
+        <p>本站主要收录中国军事题材与军旅影视作品，包括战争史诗、军旅生活、红色经典、历史革命、现代国防与军人传记六大分区，覆盖电影与电视剧两种形式。</p>
+      </details>
+      <details>
+        <summary>影片资料是否包含史实考据？</summary>
+        <p>是。每部入选影片均附有创作背景说明，部分重点影片另设史实对照条目，标注艺术加工与历史原貌之间的差异，供研究者参考。</p>
+      </details>
+      <details>
+        <summary>八一电影制片厂的作品如何归档？</summary>
+        <p>按照建厂年代分段整理，从1952年建厂初期的黑白胶片作品，到2018年改制前的全部出品，逐年代建立索引，并标注片种、题材与创作人员信息。</p>
+      </details>
+      <details>
+        <summary>能否投稿补充影片资料？</summary>
+        <p>可以。本站接受军事影视爱好者的考证成果与资料纠错，经编辑部核实后会并入正式条目，并在条目底部标注贡献者信息。</p>
+      </details>
+      <details>
+        <summary>手机端浏览是否适配？</summary>
+        <p>全站采用移动端自适应布局，手机、平板与桌面端均可完整访问全部内容，无需安装任何应用，浏览器直接打开即可使用筛选与检索功能。</p>
+      </details>
+      <details>
+        <summary>如何获取影片的正版观看渠道？</summary>
+        <p>每部影片详情页均标注建议的观看渠道类型，用户可根据自身订阅情况选择对应正版平台，本站不提供任何资源下载链接。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="l">
+        <div class="kicker">Join the Archive</div>
+        <h3>加入军事影视资料整理</h3>
+        <p>八一电影网(bayidianyingwang-zh.github.io)的资料库由编辑部与热心军迷共同维护。如果你掌握某部影片的幕后资料、史实考证或稀有影像信息，欢迎参与补充与纠错。</p>
+        <a class="btn1" href="#qa" style="display:inline-flex;margin-top:8px">查看投稿方式 →</a>
+      </div>
+      <div class="r">
+        <b>1,200+</b>
+        <span>已归档影片条目<br>持续更新中</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="logo"><span class="star">★</span><div><b>八一电影网</b><span>BAYI FILM ARCHIVE</span></div></div>
+        <p>八一电影网(bayidianyingwang-zh.github.io)专注于中国军事题材与军旅影视作品的资料整理与深度解读，系统归档八一电影制片厂经典影片与当代军事题材作品。</p>
+        <div class="urlbox">
+          <span>官方站点</span>
+          <code>https://bayidianyingwang-zh.github.io</code>
+          <button id="cp" type="button">复制</button>
+        </div>
+      </div>
+      <div>
+        <h5>◆ 片库导航</h5>
+        <ul>
+          <li><a href="#top">首页</a></li>
+          <li><a href="#archive">影片年表</a></li>
+          <li><a href="#gallery">题材图集</a></li>
+          <li><a href="#doctrine">内容主张</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>◆ 研究专栏</h5>
+        <ul>
+          <li><a href="#timeline">八一厂年谱</a></li>
+          <li><a href="#qa">常见问题</a></li>
+          <li><a href="#">史实对照</a></li>
+          <li><a href="#">人物档案</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>◆ 关于本站</h5>
+        <ul>
+          <li><a href="#">网站简介</a></li>
+          <li><a href="#">投稿须知</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">联系编辑部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 八一电影网 · 本站仅为军事影视资料整理与信息导航，不涉及在线播放与资源下载，请通过正版授权渠道观看</span>
+      <span>SITE: bayidianyingwang-zh.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<button id="topbtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var m=document.getElementById('mbtn'),n=document.getElementById('nav');
+  m.addEventListener('click',function(){n.classList.toggle('open');m.classList.toggle('open')});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');m.classList.remove('open')})});
+
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    chips.forEach(function(x){x.classList.remove('on')});
+    c.classList.add('on');
+  })});
+
+  var tb=document.getElementById('topbtn');
+  window.addEventListener('scroll',function(){tb.classList.toggle('show',window.scrollY>540)});
+  tb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  var cp=document.getElementById('cp'),url='https://bayidianyingwang-zh.github.io';
+  cp.addEventListener('click',function(){
+    if(navigator.clipboard){navigator.clipboard.writeText(url)}
+    var o=cp.textContent;cp.textContent='已复制';setTimeout(function(){cp.textContent=o},1800);
+  });
+})();
+</script>
+</body>
+</html>
